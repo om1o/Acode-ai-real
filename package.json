@@ -1,0 +1,32 @@
+{
+  "name": "acode",
+  "version": "1.0.0",
+  "description": "⚡ ACODE — The Ultimate Agentic AI Coding CLI. Rizzmaxxing your code with multi-LLM support, customizable slang verbs, agentic workflows, and terminal drip.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "acode": "./bin/acode.js"
+  },
+  "scripts": {
+    "start": "node bin/acode.js",
+    "dev": "node bin/acode.js",
+    "test": "echo \"Tests coming soon\" && exit 0"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "coding-assistant",
+    "agentic",
+    "llm",
+    "openai",
+    "anthropic",
+    "gemini",
+    "deepseek",
+    "ollama",
+    "aider",
+    "claude-code",
+    "rizzmaxxing"
+  ],
+  "author": "om1o",
+  "license": "MIT"
+}
