@@ -14,7 +14,7 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs';
 
 const DEFAULT_CONFIG = {
   // Active provider
-  provider: 'openai',
+  provider: 'openrouter',
   
   // Provider configurations (from Aider, OpenClaude, system-prompts repos)
   providers: {
