@@ -152,6 +152,15 @@ const DEFAULT_CONFIG = {
       maxTokens: 1000000,
       temperature: 0.7,
       models: [],
+    },
+    free: {
+      name: 'Free (Pollinations AI proxy)',
+      baseUrl: 'https://text.pollinations.ai/openai',
+      apiKey: 'free',
+      model: 'openai',
+      maxTokens: 1000000,
+      temperature: 0.7,
+      models: ['openai', 'claude', 'gemini', 'llama', 'deepseek', 'grok', 'qwen-coder'],
     }
   },
 
