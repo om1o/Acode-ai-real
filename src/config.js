@@ -25,7 +25,7 @@ const DEFAULT_CONFIG = {
       model: 'gpt-4o',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'o1', 'o1-mini', 'o1-preview', 'o3-mini', 'gpt-3.5-turbo'],
+      models: ['o1', 'gpt-4o'],
     },
     anthropic: {
       name: 'Anthropic',
@@ -34,7 +34,7 @@ const DEFAULT_CONFIG = {
       model: 'claude-sonnet-4.6',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['claude-sonnet-4.6', 'claude-opus-4.6', 'claude-3-7-sonnet-20250219', 'claude-3-5-sonnet-20241022'],
+      models: ['claude-sonnet-4.6', 'claude-opus-4.6'],
     },
     gemini: {
       name: 'Google Gemini',
@@ -43,7 +43,7 @@ const DEFAULT_CONFIG = {
       model: 'gemini-2.5-pro-preview-05-06',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['gemini-2.5-pro-preview-05-06', 'gemini-2.5-flash-preview-05-20', 'gemini-2.0-flash', 'gemini-2.0-flash-lite', 'gemini-1.5-pro', 'gemini-1.5-flash'],
+      models: ['gemini-2.5-pro-preview-05-06', 'gemini-2.5-flash-preview-05-20'],
     },
     deepseek: {
       name: 'DeepSeek',
@@ -52,7 +52,7 @@ const DEFAULT_CONFIG = {
       model: 'deepseek-chat',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['deepseek-chat', 'deepseek-coder', 'deepseek-reasoner'],
+      models: ['deepseek-reasoner', 'deepseek-chat'],
     },
     ollama: {
       name: 'Ollama (Local)',
@@ -61,7 +61,7 @@ const DEFAULT_CONFIG = {
       model: 'qwen2.5-coder:7b',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['qwen2.5-coder:7b', 'qwen2.5-coder:14b', 'qwen2.5-coder:32b', 'llama3.3:70b', 'codellama:34b', 'deepseek-coder-v2:16b', 'mistral:7b', 'mixtral:8x7b', 'phi3:14b', 'gemma2:27b', 'starcoder2:15b'],
+      models: ['qwen2.5-coder:32b', 'llama3.3:70b'],
     },
     groq: {
       name: 'Groq',
@@ -70,7 +70,7 @@ const DEFAULT_CONFIG = {
       model: 'llama-3.3-70b-versatile',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['llama-3.3-70b-versatile', 'llama-3.1-8b-instant', 'mixtral-8x7b-32768', 'gemma2-9b-it', 'qwen-qwq-32b'],
+      models: ['llama-3.3-70b-versatile', 'qwen-qwq-32b'],
     },
     openrouter: {
       name: 'OpenRouter',
@@ -79,7 +79,7 @@ const DEFAULT_CONFIG = {
       model: 'anthropic/claude-sonnet-4.6',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['anthropic/claude-sonnet-4.6', 'anthropic/claude-opus-4.6', 'openai/gpt-4o', 'google/gemini-2.5-pro-preview', 'deepseek/deepseek-chat', 'meta-llama/llama-3.3-70b-instruct', 'mistralai/mistral-large-latest', 'x-ai/grok-3'],
+      models: ['anthropic/claude-sonnet-4.6', 'openai/o1'],
     },
     together: {
       name: 'Together AI',
@@ -88,7 +88,7 @@ const DEFAULT_CONFIG = {
       model: 'meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo', 'meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo', 'Qwen/Qwen2.5-Coder-32B-Instruct', 'deepseek-ai/DeepSeek-R1', 'mistralai/Mixtral-8x22B-Instruct-v0.1'],
+      models: ['meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo', 'deepseek-ai/DeepSeek-R1'],
     },
     github: {
       name: 'GitHub Models',
@@ -97,7 +97,7 @@ const DEFAULT_CONFIG = {
       model: 'gpt-4o',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['gpt-4o', 'gpt-4o-mini', 'Phi-3.5-MoE-instruct', 'Meta-Llama-3.1-70B-Instruct', 'Mistral-large-2411'],
+      models: ['gpt-4o', 'Meta-Llama-3.1-70B-Instruct'],
     },
     mistral: {
       name: 'Mistral AI',
@@ -106,7 +106,7 @@ const DEFAULT_CONFIG = {
       model: 'mistral-large-latest',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['mistral-large-latest', 'mistral-medium-latest', 'mistral-small-latest', 'codestral-latest', 'open-mistral-nemo', 'open-mixtral-8x22b'],
+      models: ['mistral-large-latest', 'codestral-latest'],
     },
     xai: {
       name: 'xAI (Grok)',
@@ -115,7 +115,7 @@ const DEFAULT_CONFIG = {
       model: 'grok-3',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['grok-3', 'grok-3-mini', 'grok-2', 'grok-2-mini'],
+      models: ['grok-3', 'grok-3-mini'],
     },
     fireworks: {
       name: 'Fireworks AI',
@@ -124,7 +124,7 @@ const DEFAULT_CONFIG = {
       model: 'accounts/fireworks/models/llama-v3p1-70b-instruct',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['accounts/fireworks/models/llama-v3p1-70b-instruct', 'accounts/fireworks/models/llama-v3p1-405b-instruct', 'accounts/fireworks/models/qwen2p5-coder-32b-instruct'],
+      models: ['accounts/fireworks/models/llama-v3p1-405b-instruct', 'accounts/fireworks/models/qwen2p5-coder-32b-instruct'],
     },
     perplexity: {
       name: 'Perplexity',
@@ -133,7 +133,7 @@ const DEFAULT_CONFIG = {
       model: 'sonar-pro',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['sonar-pro', 'sonar', 'sonar-reasoning-pro', 'sonar-reasoning'],
+      models: ['sonar-reasoning-pro', 'sonar-pro'],
     },
     cerebras: {
       name: 'Cerebras',
