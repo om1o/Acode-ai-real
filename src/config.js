@@ -25,7 +25,7 @@ const DEFAULT_CONFIG = {
       model: 'gpt-4o',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['o1', 'gpt-4o'],
+      models: ['gpt-5.4', 'gpt-5.4-omni'],
     },
     anthropic: {
       name: 'Anthropic',
@@ -58,10 +58,10 @@ const DEFAULT_CONFIG = {
       name: 'Ollama (Local)',
       baseUrl: 'http://localhost:11434/v1',
       apiKey: 'ollama',
-      model: 'qwen2.5-coder:7b',
+      model: 'qwen-3.6-coder',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['qwen2.5-coder:32b', 'llama3.3:70b'],
+      models: ['qwen-3.6', 'qwen-3.6-coder'],
     },
     groq: {
       name: 'Groq',
@@ -79,7 +79,7 @@ const DEFAULT_CONFIG = {
       model: 'anthropic/claude-sonnet-4.6',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['anthropic/claude-sonnet-4.6', 'openai/o1'],
+      models: ['openai/gpt-5.4', 'anthropic/claude-sonnet-4.6'],
     },
     together: {
       name: 'Together AI',
@@ -88,7 +88,7 @@ const DEFAULT_CONFIG = {
       model: 'meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo', 'deepseek-ai/DeepSeek-R1'],
+      models: ['Qwen/Qwen-3.6-Max', 'meta-llama/Llama-4.1-405B'],
     },
     github: {
       name: 'GitHub Models',
@@ -97,7 +97,7 @@ const DEFAULT_CONFIG = {
       model: 'gpt-4o',
       maxTokens: 1000000,
       temperature: 0.7,
-      models: ['gpt-4o', 'Meta-Llama-3.1-70B-Instruct'],
+      models: ['gpt-5.4', 'gpt-5.4-omni'],
     },
     mistral: {
       name: 'Mistral AI',
